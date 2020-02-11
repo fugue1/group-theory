@@ -20,7 +20,7 @@ order 2:
                                          [3,4,1,2],
                                          [4,3,2,1]]
  
-Here, the first row [1,2,3,4], and the element 1 appearing throughout the table, refer to the same element, the identity. 
+Here, the first row [1,2,3,4], and the numeral 1 appearing throughout the table, refer to the same element, the identity. 
 In general, the numeral 'n' and the n'th row of the table are two different ways of representating the n'th element of 
 the group. 
 
@@ -49,10 +49,10 @@ We return each group, together with the orders of it's elements as an ordered pa
                                               fastGroup 4
 will return 
                                                
-                                           [
-                                            ([1,2,4,4], [[1,2,3,4], [2,1,4,3], [3,4,2,1], [4,3,1,2]]),
-                                            ([1,2,2,2], [[1,2,3,4], [2,1,4,3], [3,4,1,2], [4,3,2,1]])
-                                           ]
+                               [
+                                ([1,2,4,4], [[1,2,3,4], [2,1,4,3], [3,4,2,1], [4,3,1,2]]),
+                                ([1,2,2,2], [[1,2,3,4], [2,1,4,3], [3,4,1,2], [4,3,2,1]])
+                               ]
                
                                            
 The first element [1,2,4,4] of the first tuple gives the respective orders of each of the rows 
