@@ -34,6 +34,7 @@ associative, which we would be forced to do if we allowed our multiplication tab
 
                                       (i'th row) x (j'th row) = (M_i_j)'th row
 
+where M_i_j is the number in the i'th row and j'th column.
 
 We only consider latin squares where the first element of the n'th row is n, and where the first row is the identity (that is,
 the identity permutation [1,2,3,...,n]. We also construct our latin squares to have the identity elements distrubited to be
