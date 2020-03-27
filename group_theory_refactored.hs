@@ -52,13 +52,13 @@ haskLatin n = map (intArray:) $ concatMap (treeBuild 2) $ filterCollapseNorm 2 [
         intArray = castArray intvl
         
         treeBuild row (ids, ((a,[]):zss)) | 0 == remaind = [[ arr ]]
-                                     | otherwise = []
+                                          | otherwise = []
             where ordz = orderPermMax 2 arr arr
                   remaind = rem n ordz
                   arr = castArray $ a: map fst zss 
 
         treeBuild row (ids, xss) | 0 == remaind = map (arr:) $ (concatMap (treeBuild (1+row)) filtercollapsed)
-                            | otherwise = []
+                                 | otherwise = []
             where (col,(firsts, seconds)) = idSplit xss
                   arr = castArray firsts
                   ordz = orderPermMax 2 arr arr
