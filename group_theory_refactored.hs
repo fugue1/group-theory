@@ -74,10 +74,10 @@ haskLatin n = map (intArray:) $ concatMap (treeBuild 2) $ filterCollapseNorm 2 [
 
 haskGroup 1 = [[[1]]]
 
-haskGroup n = map (map elems) $ filter (weakArray . castArray) $ haskLatin n
+haskGroup n = map (map elems) $ filter (closeArray . castArray) $ haskLatin n
     where nSqr = [(i,j) | i <- [2..n], j <- [2..n]]
           castArray = listArray (1,n)
-          weakArray arr = all (\(i,j) -> let comp = comped i j in comp == arr ! (comp ! 1)) nSqr
+          closeArray arr = all (\(i,j) -> let comp = comped i j in comp == arr ! (comp ! 1)) nSqr
               where comped i j = comp_perm (arr ! i) (arr ! j)
                     
           comp_perm as bs = array (1,n) [(i, as ! (bs ! i)) | i <- intvl]
