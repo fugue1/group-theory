@@ -3,7 +3,6 @@ import System.Environment
 
 
 deleteWithOne [] = []
-deleteWithOne [x] = [(x, [])]
 deleteWithOne (x:xs) = (x, xs) : map (\(z, ys) -> (z, x:ys)) (deleteWithOne xs)
 
 filter_collapse (xs:yss) = [ (x, ns):as | (x, ns) <- xs, as <- filter_collapse [genRemove (\(a, _) -> a == x) ys | ys <- yss]]
