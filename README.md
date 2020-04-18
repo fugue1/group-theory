@@ -31,13 +31,13 @@ with the rules for composing permutations.
 Insisting on the RR saves us from the computationally heavy task of, for instance, verifying that a multiplication table is
 associative, which we would be forced to do if we allowed our multiplication tables to take any form. Instead we can verify:
 
-                             
+                       M_i x M_j = M_(M_ij)      
 
-where M_i_j is the number in the i'th row and j'th column.
+where M_i is the i'th row, and M_ij is the number in the i'th row and j'th column.
 
 We only consider latin squares where the first element of the n'th row is n, and where the first row is the identity (that is,
 the identity permutation [1,2,3,...,n]. We also construct our latin squares to have the identity elements distributed to be
-symmetric about the main diagonal. That is, if M_i_j = 1, then also M_j_i = 1. 
+symmetric about the main diagonal. That is, if M_ij = 1, then also M_ji = 1. 
 
 As we build our latin square, we check that each row, considered as a permutation, has order dividing the order of the group.                                               
 We also construct each row to have order (considered as a permutation) at least as great as the last row. This is to avoid
