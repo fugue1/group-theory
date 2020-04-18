@@ -31,7 +31,7 @@ with the rules for composing permutations.
 Insisting on the RR saves us from the computationally heavy task of, for instance, verifying that a multiplication table is
 associative, which we would be forced to do if we allowed our multiplication tables to take any form. Instead we can verify:
 
-                                      https://latex.codecogs.com/gif.latex?M_i&space;\times&space;M_j&space;=&space;$M_{M_{ij}}$
+                                      <img src="https://latex.codecogs.com/gif.latex?M_i&space;\times&space;M_j&space;=&space;$M_{M_{ij}}$" title="M_i \times M_j = $M_{M_{ij}}$" />
 
 where M_i_j is the number in the i'th row and j'th column.
 
