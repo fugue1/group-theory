@@ -23,7 +23,7 @@ Here, the first row [1,2,3,4], and the numeral 1 appearing throughout the table,
 In general, the numeral 'n' and the n'th row of the table are two different ways of representating the n'th element of 
 the group. 
 
-The advantage of the RR is that the elements of the group are representated in such a way as to allow us to compose them.
+The advantage of the RR is that the elements of the group are represented in such a way as to allow us to compose them.
 If I tell you 'a' and 'b' are the elements of a group, and nothing more, it is meaningless to ask you to compute the product
 'ab'. If instead I tell you [2,1,4,3], [3,4,1,2] are the elements of a group in the LRR, we can readily calculate the product
 with the rules for composing permutations. 
